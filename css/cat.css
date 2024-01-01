@@ -76,3 +76,38 @@ body::-webkit-scrollbar {
         background-color: transparent
     }
 }
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgba(73, 177, 245, 0.2);
+    border-radius: 2em;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--theme-color);
+    background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(72, 113, 226, 0.4) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(32, 108, 207, 0.4) 50%,
+      rgba(51, 34, 204, 0.4) 75%,
+      transparent 75%,
+      transparent
+    );
+    border-radius: 2em;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+  
+  ::-moz-selection {
+    color: #4f98d4;
+    background-color: var(--theme-color);
+  }
